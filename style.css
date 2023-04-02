@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding:0%;
+    border-radius: 2rem;
+}
+body{
+    background-image: url("images/bg.jpg");
+    background-color: #cccccc; 
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.cardcontainer{
+    /* border: 2px solid black; */
+    width:270px;
+    height:450px;
+    
+    border-radius: 2rem;
+    
+    
+}
+.cardbox{
+    height: 100%;
+    width:100%;
+    position: relative;
+    transition: transform 1700ms ;
+    transform-style: preserve-3d;
+}
+.cardcontainer:hover >.cardbox{
+    transform: rotateY(180deg);
+}
+
+.front{
+    background-image: linear-gradient(45deg, red, yellow);
+}
+.front,.back{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 7px 2px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+}
+.name{
+    /* align-content: center; */
+    padding: 12rem 2.6rem;
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive;
+    color: azure;
+}
+.head{
+    background-image: linear-gradient(45deg, red, yellow);
+    
+    height: 55%;
+    width: 100%;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.back{
+  
+    background-color: rgb(255, 255, 255);
+    border-radius:2rem ;
+    transform: rotateY(180deg);
+    font-family: 'Poppins', sans-serif;
+}
+
+.info{
+    padding: 1.2rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.infohead{
+    text-align: center;
+    color: gold;
+}
+.pp{
+    padding: 1rem;
+    border-radius: 20rem;
+    width: 70%;
+
+}
+.name1{
+    font-family: 'Fredoka One', cursive;
+    color: azure;
+    font-size: 1.54rem;
+}
